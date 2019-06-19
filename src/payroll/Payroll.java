@@ -15,7 +15,7 @@ public class Payroll
    private double Salary;
    private double bonus;
    private String emp;
- 
+
      /**constructor that takes the salary and employee name
       * 
       */
@@ -23,10 +23,16 @@ public class Payroll
         {
             Salary=Sal;
             emp=givenUser;
-                 
+                       double newSalary =0;
+      if (Sal<=3000){
+          newSalary = (Sal*(10/100))+Sal; 
+      }
+      else {
+          newSalary = Sal;
+      }
+      return newSalary; 
         }
-         /**The method for calculating salary including bonus.Bonus is 10% of salary 
-      */ 
+         /**The method for calculating salary including bonus.Bonus is 10% of salary
         
         
      /**The getter for the Salary

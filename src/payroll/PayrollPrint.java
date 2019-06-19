@@ -19,11 +19,13 @@ public static void main(String[] args)
  for the given bank */
 Payroll ac[]=new Payroll[50];
 Scanner sc=new Scanner(System.in);
+
 System.out.println("Please enter the employee name:");
 //add code
+String givenUser =sc.nextLine();
 System.out.println("Please enter the salary: salary <=3000");
-       
-System.out.println("The final Salary including bonus is: ");         
+       double sal = sc.nextDouble();
+System.out.println("The final Salary including bonus is: "+ newSalary);         
 
 }
 
